@@ -19,7 +19,7 @@ const funko1 = {
     "marketValue": 100
 };
 
-setTimeout(() => {
+
 describe ('Cliente-Servidor add', () => {
     it('Añade un funko a la coleccion', () => {
         const data: funkoSchema[] = JSON.parse(readFileSync('src/ej/funko/users/Test/funko-list.json').toString());
@@ -27,4 +27,7 @@ describe ('Cliente-Servidor add', () => {
         expect(funkonuevo).to.be.deep.equal(funko1);   
     });
 });
-}, 2000);
+
+after(() => {
+    servidor.closeServer();
+});

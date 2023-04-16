@@ -9,6 +9,7 @@ import { funkoSchema } from "../schema/funkoSchema.js";
  */
 export class server {
   private puerto = 60300;
+  private servidor: net.Server;
   /**
    * Constructor de la clase
    * Crea el servidor y escucha en el puerto 60300
@@ -16,7 +17,7 @@ export class server {
    * Se ejecuta la función correspondiente al comando
    */
   constructor() {
-    net
+    this.servidor = net
       .createServer((connection) => {
         console.log("A client has connected.");
 
@@ -63,6 +64,13 @@ export class server {
         console.log("Waiting for clients to connect.");
       });
   }
+  /**
+   * Cierra el servidor
+   */
+  public closeServer(): void {
+    this.servidor.close();
+  }
+
   /**
    * Lee el fichero y comprueba que el id existe, en caso de que si, actualiza el funko de la base de datos
    * y devuelve el cliente un mensaje de éxito, en caso de que no, devuelve un mensaje de error

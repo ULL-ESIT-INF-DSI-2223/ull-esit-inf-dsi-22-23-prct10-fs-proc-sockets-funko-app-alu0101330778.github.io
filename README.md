@@ -818,6 +818,9 @@ export class server {
         console.log("Waiting for clients to connect.");
       });
   }
+  public closeServer(): void {
+    this.servidor.close();
+  }
   public updateFunko(
     path: string,
     user: string,
