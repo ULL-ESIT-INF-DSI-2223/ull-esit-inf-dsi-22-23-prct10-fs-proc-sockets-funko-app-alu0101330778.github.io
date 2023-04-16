@@ -1,10 +1,10 @@
 # [PRÁCTICA 10.](https://github.com/ULL-ESIT-INF-DSI-2223/ull-esit-inf-dsi-22-23-prct09-funko-app-alu0101330778.github.io). 
 
-[![Coverage Status](https://coveralls.io/repos/github/ULL-ESIT-INF-DSI-2223/ull-esit-inf-dsi-22-23-prct09-funko-app-alu0101330778.github.io/badge.svg?branch=main)](https://coveralls.io/github/ULL-ESIT-INF-DSI-2223/ull-esit-inf-dsi-22-23-prct09-funko-app-alu0101330778.github.io?branch=main)
+[![Coverage Status](https://coveralls.io/repos/github/ULL-ESIT-INF-DSI-2223/ull-esit-inf-dsi-22-23-prct10-fs-proc-sockets-funko-app-alu0101330778.github.io/badge.svg?branch=main)](https://coveralls.io/github/ULL-ESIT-INF-DSI-2223/ull-esit-inf-dsi-22-23-prct10-fs-proc-sockets-funko-app-alu0101330778.github.io?branch=main)
 
-[![Coveralls](https://github.com/ULL-ESIT-INF-DSI-2223/ull-esit-inf-dsi-22-23-prct07-destravate-datamodel-grupof/actions/workflows/coveralls.yml/badge.svg)](https://github.com/ULL-ESIT-INF-DSI-2223/ull-esit-inf-dsi-22-23-prct07-destravate-datamodel-grupof/actions/workflows/coveralls.yml)
+[![Coveralls](https://github.com/ULL-ESIT-INF-DSI-2223/ull-esit-inf-dsi-22-23-prct10-fs-proc-sockets-funko-app-alu0101330778.github.io/actions/workflows/coveralls.yml/badge.svg)](https://github.com/ULL-ESIT-INF-DSI-2223/ull-esit-inf-dsi-22-23-prct10-fs-proc-sockets-funko-app-alu0101330778.github.io/actions/workflows/coveralls.yml)
 
-[![SonarCloud](https://sonarcloud.io/images/project_badges/sonarcloud-orange.svg)](https://sonarcloud.io/summary/new_code?id=ULL-ESIT-INF-DSI-2223_ull-esit-inf-dsi-22-23-prct09-funko-app-alu0101330778.github.io)
+[![SonarCloud](https://sonarcloud.io/images/project_badges/sonarcloud-white.svg)](https://sonarcloud.io/summary/new_code?id=ULL-ESIT-INF-DSI-2223_ull-esit-inf-dsi-22-23-prct10-fs-proc-sockets-funko-app-alu0101330778.github.io)
 ## Jairo Alonso Abreu - alu0101330778.
 
 ## Índice <a name="índice"></a>
@@ -835,7 +835,6 @@ export class server {
         console.log(chalk.green("Success: ") + "Archivo leído correctamente.");
         const funkos: funkoSchema[] = JSON.parse(data.toString());
         if (this.compruebafunko(funko.id, funkos)) {
-          //Buscar el funko con el mismo id y cambiarlo por el nuevo
           const funkosFiltrados = funkos.map((funko_) => {
             if (funko_.id === funko.id) {
               return funko;
@@ -887,7 +886,6 @@ export class server {
         console.log(chalk.green("Success: ") + "Archivo leído correctamente.");
         const funkos: funkoSchema[] = JSON.parse(data.toString());
         if (this.compruebafunko(id, funkos)) {
-          //Remover el funko
           const funkosFiltrados = funkos.find((funko) => funko.id === id);
 
           connection.write(
@@ -918,11 +916,9 @@ export class server {
         return;
       } else {
         console.log(chalk.green("Success: ") + "Archivo leído correctamente.");
-        //Comprobar si el id existe
         const funkos: funkoSchema[] = JSON.parse(data.toString());
 
         if (this.compruebafunko(id, funkos)) {
-          //Remover el funko
           const funkosFiltrados = funkos.filter((funkoItem) => {
             return funkoItem.id != id;
           });
@@ -980,7 +976,6 @@ export class server {
           datos: "El usuario no existe. Se ha creado.",
         }) + "\n"
       );
-      //Se creara el usuario
       mkdirSync("src/ej/funko/users/" + user);
       writeFile(
         "src/ej/funko/users/" + user + "/funko-list.json",
@@ -1079,7 +1074,7 @@ Respecto al primer ejercicio me ha hecho entender mejor como funcionan la pila d
 * [Chalk](https://www.npmjs.com/package/chalk)
 * [FS](https://nodejs.org/api/fs.html)
 * [Net](https://nodejs.org/api/net.html)
-
-* [Enunciado de la práctica](https://ull-esit-inf-dsi-2223.github.io/prct09-filesystem-funko-app/)
-* [Repositorio de la práctica](https://github.com/ULL-ESIT-INF-DSI-2223/ull-esit-inf-dsi-22-23-prct09-funko-app-alu0101330778.github.io)
+* [Socket.io](https://socket.io/)
+* [Enunciado de la práctica](https://https://ull-esit-inf-dsi-2223.github.io/prct10-fs-proc-sockets-funko-app/)
+* [Repositorio de la práctica](https://github.com/ULL-ESIT-INF-DSI-2223/ull-esit-inf-dsi-22-23-prct10-fs-proc-sockets-funko-app-alu0101330778.github.io)
 
