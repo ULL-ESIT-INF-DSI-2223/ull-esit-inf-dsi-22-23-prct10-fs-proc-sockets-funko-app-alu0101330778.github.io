@@ -206,6 +206,7 @@ File helloworld.txt has been modified somehow
 Una vez resuelto se elimina de la pila de llamadas y solo queda el manejador de eventos `watcher.on` en el registro de eventos de la API. Con estoas dos modificaciones podemos ver que los mensajes se ejecutan en un orden incorrecto ya que el mensaje `File ${filename} is no longer watched` sale antes de que se pueda hacer ninguna modificación y aún así después salen mensajes de que el código se ha modificado. Se debería de implementar algún método que cuando se cierre el documento se elimine el manejador de eventos `watcher.on` para que no siga a la espera y se ejecute el `console.log` que muestra el mensaje `File ${filename} is no longer watched`. Por último falta mencionar qué el objeto `constants.F_OK` especifica los parámetros de accesibilidad del fichero.
 ## Ejercicio 2 <a name="ej2"></a>
 > [Volver al índice](#índice)
+
 En este ejercicio se nos pedia que realizaramos dos aplicaciones para proporcionar información sobre el contenido de un fichero. Una aplicación será implementada con el método `pipe` mientras que la otra no.
 ### WithPipe
 Para realizar esta aplicación se nos pedia que implementaramos una función que reciba como parámetros el nombre del fichero y los parámetros `-l`, `-c` y `-w` o cualquier combinación de estos tres y que devolviera el número de líneas, caracteres y palabras del fichero, respectivamente. Para ello se ha usado el método `pipe`.
