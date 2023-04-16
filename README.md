@@ -1067,6 +1067,7 @@ export class server {
 El servidor genera mensajes de error o éxito también en su consola.
 ## Conclusiones <a name="conclusiones"></a>
 > [Volver al índice](#índice)
+Respecto al primer ejercicio me ha hecho entender mejor como funcionan la pila de llamadas, el registro de eventos de la API y la cola de manejadores. Una vez entendido realizar la traza es solo fijarse bien en el código. Respecto al segundo, me ha ayudado a entender como se manejan los eventos y a crear procesos hijos en paralelo y así ejecutarse de forma asíncrona. Por último, gracias a la modificación de la aplicación de funkos, he podido entender del todo como realizar una aplicación cliente-servidor y como gestionar los datos de forma asíncrona.
 
 ## Referencias <a name="referencias"></a>
 > [Volver al índice](#índice)
@@ -1074,6 +1075,8 @@ El servidor genera mensajes de error o éxito también en su consola.
 * [Yargs](https://www.npmjs.com/package/yargs)
 * [Chalk](https://www.npmjs.com/package/chalk)
 * [FS](https://nodejs.org/api/fs.html)
+* [Net](https://nodejs.org/api/net.html)
+
 * [Enunciado de la práctica](https://ull-esit-inf-dsi-2223.github.io/prct09-filesystem-funko-app/)
 * [Repositorio de la práctica](https://github.com/ULL-ESIT-INF-DSI-2223/ull-esit-inf-dsi-22-23-prct09-funko-app-alu0101330778.github.io)
 
