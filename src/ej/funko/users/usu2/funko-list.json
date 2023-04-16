@@ -1,0 +1,74 @@
+[
+  {
+    "id": "1",
+    "name": "Funko1",
+    "description": "Funko1 description",
+    "type": "POP",
+    "genre": "MUSIC",
+    "franchise": "Funko1 franchise",
+    "number": 1,
+    "exclusive": true,
+    "specialFeatures": "Funko1 special features",
+    "marketValue": 10
+  },
+  {
+    "id": "2",
+    "name": "Funko2",
+    "description": "Funko2 description",
+    "type": "POP",
+    "genre": "MUSIC",
+    "franchise": "Funko2 franchise",
+    "number": 2,
+    "exclusive": true,
+    "specialFeatures": "Funko2 special features",
+    "marketValue": 20
+  },
+  {
+    "id": "3",
+    "name": "Funko3",
+    "description": "Funko3 description",
+    "type": "POP",
+    "genre": "MUSIC",
+    "franchise": "Funko3 franchise",
+    "number": 3,
+    "exclusive": true,
+    "specialFeatures": "Funko3 special features",
+    "marketValue": 30
+  },
+  {
+    "id": "4",
+    "name": "Funko4",
+    "description": "Funko4 description",
+    "type": "POP",
+    "genre": "MUSIC",
+    "franchise": "Funko4 franchise",
+    "number": 4,
+    "exclusive": true,
+    "specialFeatures": "Funko4 special features",
+    "marketValue": 40
+  },
+  {
+    "id": "5",
+    "name": "Funko5",
+    "description": "Funko5 description",
+    "type": "POP",
+    "genre": "MUSIC",
+    "franchise": "Funko5 franchise",
+    "number": 5,
+    "exclusive": true,
+    "specialFeatures": "Funko5 special features",
+    "marketValue": 75
+  },
+  {
+    "id": "6",
+    "name": "Funko6",
+    "description": "Funko6 description",
+    "type": "POP",
+    "genre": "MUSIC",
+    "franchise": "Funko6 franchise",
+    "number": 6,
+    "exclusive": true,
+    "specialFeatures": "Funko6 special features",
+    "marketValue": 110
+  }
+]
